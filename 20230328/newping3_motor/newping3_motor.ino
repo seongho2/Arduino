@@ -140,10 +140,10 @@ void loop()
 
  if( (front_sonar > 0) && (front_sonar <= 400.0) )
  {
-   // 180도 반회전 시계 방향으로 회전
    Serial.println("Rotate CCW");
    
- /*  motor_A_control(HIGH,0);  
+ /*// 180도 반회전 시계 방향으로 회전
+   motor_A_control(HIGH,0);  
    motor_B_control(HIGH,0); 
    delay(650); 
    
@@ -161,7 +161,8 @@ void loop()
    */
 
 
- /*motor_A_control(HIGH,0);  
+ /*// 90도 반회전 시계 방향으로 회전
+   motor_A_control(HIGH,0);  
    motor_B_control(HIGH,0); 
    delay(650);
 
@@ -177,6 +178,7 @@ void loop()
    motor_B_control(HIGH,100); 
    delay(0);*/
 
+   // 90도 회전 시계 방향으로 회전
    motor_A_control(HIGH,0);  
    motor_B_control(HIGH,0); 
    delay(650);
