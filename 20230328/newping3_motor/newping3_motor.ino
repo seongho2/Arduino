@@ -177,7 +177,7 @@ void loop()
    motor_B_control(HIGH,100); 
    delay(0);*/
 
-motor_A_control(HIGH,0);  
+   motor_A_control(HIGH,0);  
    motor_B_control(HIGH,0); 
    delay(650);
 
