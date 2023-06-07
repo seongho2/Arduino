@@ -390,9 +390,15 @@ void setup()
     {
       motor_L_control(0);  motor_R_control(0);
       delay(1000);
+      motor_L_control(-150);  motor_R_control(1500);
+      delay(300);
+      motor_L_control(200);  motor_R_control(40);
+      delay(2000);
+      /*motor_L_control(0);  motor_R_control(0);
+      delay(1000);
       motor_L_control(1500);  motor_R_control(-100);
       delay(300);
       motor_L_control(45);  motor_R_control(180);
-      delay(1500);
+      delay(1500);*/
     }
   }
